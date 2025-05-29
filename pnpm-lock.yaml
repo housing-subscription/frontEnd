@@ -84,9 +84,9 @@ importers:
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.1
-      tailwindcss-rem-to-px:
-        specifier: ^0.1.1
-        version: 0.1.1
+      tailwindcss-preset-px-to-rem:
+        specifier: ^1.2.1
+        version: 1.2.1
       typescript:
         specifier: ^5
         version: 5.8.3
@@ -2200,8 +2200,8 @@ packages:
     resolution: {integrity: sha512-2pR2ubZSV64f/vqm9eLPz/KOvR9Dm+Co/5ChLgeHl0yEDRc6h5hXHoxEQH8Y5Ljycozd3p1k5TTSVdzYGkPvLw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tailwindcss-rem-to-px@0.1.1:
-    resolution: {integrity: sha512-xTUV9CyiUsNEN2szde/cwf6AejmIJ27w00yAoQ7y0i3ilxMff3K8TKiBi1kUO4vGpcPS8ia1MV5xcH6njldTvw==}
+  tailwindcss-preset-px-to-rem@1.2.1:
+    resolution: {integrity: sha512-m3GHwciFiXZviaN7WvOiiMjRBT7razJxgPTY6h2KcOvzvkOTysOV6gN3HkejfXUyL4DKx6YjiPcLCqv6yMeXHw==}
 
   tailwindcss@3.4.1:
     resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
@@ -4676,11 +4676,7 @@ snapshots:
     dependencies:
       '@pkgr/core': 0.2.4
 
-  tailwindcss-rem-to-px@0.1.1:
-    dependencies:
-      tailwindcss: 3.4.1
-    transitivePeerDependencies:
-      - ts-node
+  tailwindcss-preset-px-to-rem@1.2.1: {}
 
   tailwindcss@3.4.1:
     dependencies:
