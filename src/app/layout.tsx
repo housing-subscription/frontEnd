@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 
 import Footer from "./components/ui/footer";
 import Header from "./components/ui/header";
+import { MswProvider } from "./msw-provider";
 
 export const metadata: Metadata = {
   title: "청약정보서비스",
@@ -24,7 +25,9 @@ export default function RootLayout({
         />
         <div className="flex min-h-screen flex-col">
           <Header />
-          <main className="flex-1">{children}</main>
+          <MswProvider>
+            <main className="flex-1">{children}</main>
+          </MswProvider>
           <Footer />
         </div>
       </body>
