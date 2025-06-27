@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,18 +23,41 @@
       }
     ],
     "paths": {
-      "@/*": ["src/*"],
-      "@/components/*": ["src/components/*"],
-      "@/hooks/*": ["src/hooks/*"],
-      "@/store/*": ["src/store/*"],
-      "@/api/*": ["src/api/*"],
-      "@/styles/*": ["src/styles/*"],
-      "@/images/*": ["public/images/*"],
-      "@/icons/*": ["public/icons/*"],
-      "@/utils/*": ["src/utils/*"],
-      "@/constants/*": ["src/constants/*"],
-      "@/public/*": ["public/*"]
-    }
+      "@/*": [
+        "src/*"
+      ],
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/hooks/*": [
+        "src/hooks/*"
+      ],
+      "@/store/*": [
+        "src/store/*"
+      ],
+      "@/api/*": [
+        "src/api/*"
+      ],
+      "@/styles/*": [
+        "src/styles/*"
+      ],
+      "@/images/*": [
+        "public/images/*"
+      ],
+      "@/icons/*": [
+        "public/icons/*"
+      ],
+      "@/utils/*": [
+        "src/utils/*"
+      ],
+      "@/constants/*": [
+        "src/constants/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ]
+    },
+    "target": "ES2017"
   },
   "include": [
     "svgr.d.ts",
@@ -43,5 +70,7 @@
     "postcss.config.mjs",
     "next.config.mjs"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
